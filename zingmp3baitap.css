@@ -1,0 +1,209 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.zm-layout {
+    display: flex;
+    width: 100%;
+    min-width: 768px;
+    height: 100vh;
+    background-color: #170f23; 
+}
+
+.sidebar {
+    width: 240px;
+    background-color: hsla(0, 0%, 100%, 0.05);
+}
+.zmp3-logo {
+    width: 45px;
+    height: 45px;
+    background-image: url(https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.37/static/media/icon_zing_mp3_60.f6b51045.svg);
+}
+
+    
+.navbar .zm-navbar-brand {
+    
+    height: 70px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.navbar-menu {
+    list-style: none;
+}
+.sidebar-divide {
+ position: relative;
+ height: 2px;
+}
+.sidebar-divide:after {
+    content: "";
+    border-top: 1px solid white;
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 0;
+}
+.nav-item {
+    line-height: 50px;
+}
+
+.login-nav {
+    background-color: #9b4de0;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    padding: 15px 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    margin-left: 15px;
+    border: 1px solid white;
+    padding: 4px 35px 2px;
+    border-radius: 15px;
+    background-color: #a55fe3;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button {
+    margin: 30px 0 0 20px;
+    padding: 15px;
+    font-size: inherit;
+    background-color: transparent;
+    border: 0;
+    color: white;
+}
+
+.zm-header {
+   
+    display: flex;
+    position: fixed;
+    left: 240px;
+    top: 0;
+    right: 0;
+    height: 70px;   
+    min-width: 660px;
+    padding: 0 25px;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+.level-left, .level-right {
+    display: flex;
+}
+.zm-btn {
+    background-color: #170f23;
+    border: 0;
+    padding-left: 15px;
+    color:#595462;
+    font-size: 25px;
+}
+
+.zm-header .level-left .search {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+}
+.button-input {
+    background-color: #595462;
+    border: 0;
+    padding-left: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.search-content {
+    position: fixed;
+    top: 15px;
+    border-radius: 20px;
+    height: 40px;
+    background-color:#595462;
+}
+
+.input-content {
+    display: inline-block;
+    padding-right: 200px;
+}
+.input-content input {
+display: inline-block;
+    width: 150%;
+    font-size: 15px;
+    background-color: #595462;
+    border: 0;
+    position: relative;
+    padding: 11px 0;
+}
+.button-dowload {
+    padding: 10px 45px;
+    background-color: #2f2739;
+    border: 0;
+    padding-left: 30px;
+    color: #c273ed;
+    font-size: 15px;
+    position: relative;
+    border-radius: 20px;
+    
+}
+.setting {
+color: white;
+    border-radius: 50%;
+    background-color: #595462;
+    padding: 5px;
+    
+    margin-left: 12px;
+}
+.use {
+    color: white;
+    font-size: 30px;
+}
+.zm-mainpage {
+    flex-grow: 1;
+    position: relative;
+    
+    min-height: 100%;
+}
+main.zm-section>.container {
+    min-height: calc(100% - 158px);
+    margin-top: 70px;
+}
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+/*.gallery-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 0 -15px 20px;
+    transition: height .2s;
+}*/
