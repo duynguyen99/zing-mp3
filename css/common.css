@@ -1,0 +1,40 @@
+:root {
+    --layout-bg: #170f23;
+    --plus-package: #8e4cff;
+    --purple-primary: #9b4de0;
+    --premium-package: #dca519;
+    --white: #fff;
+    --black: #32323d;
+    --yellow: #f8e71c;
+    --blue: #4a90e2;
+    --green: #50e3c2;
+    --red: #e35050;
+    --gray: #dbdbdb;
+    --search-text: #eee;
+    --alpha-bg: hsla(0,0%,100%,0.1);
+    --dark-alpha-10: rgba(0, 0, 0, 0.1);
+    --dark-alpha-50: rgba(0, 0, 0, 0.5);
+    --dark-alpha-80: rgba(0, 0, 0, 0.8);
+    --sidebar-bg: hsla(0, 0%, 100%, 0.05);
+    --border-primary: hsla(0,0%,100%,0.1);
+    --img-logo-mp3: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: var(--white);
+    background-color: var(--layout-bg);
+    overflow: hidden;
+}
