@@ -11,6 +11,8 @@
     --red: #e35050;
     --gray: #dbdbdb;
     --search-text: #eee;
+    --box-item-bg: hsla(0,0%,100%,0.1);
+    --text-secondary: hsla(0,0%,100%,0.5);
     --alpha-bg: hsla(0,0%,100%,0.1);
     --dark-alpha-10: rgba(0, 0, 0, 0.1);
     --dark-alpha-50: rgba(0, 0, 0, 0.5);
@@ -39,17 +41,8 @@ body {
     overflow: hidden;
 }
 
-.zm-chart,
-.new-release,
-.zm-chill,
-.zm-energy,
-.zm-popular {
-    margin-top: 4rem;
-}
-
-.zm-section-title {
-    margin-bottom: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/*@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}*/
