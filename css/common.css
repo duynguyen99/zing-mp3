@@ -41,8 +41,37 @@ body {
     overflow: hidden;
 }
 
-/*@media screen and (max-width: 1024px) {
-    .container {
-        width: 100%;
-    }
-}*/
+.gallery{
+    margin-top: 4rem;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+a, a:active  {
+    text-decoration: none;
+    color: var( --text-secondary);
+    
+}
+a:hover {
+    color: var(--purple-primary);
+}
+
+.zm-section-title {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discovery-btn { 
+   font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+
