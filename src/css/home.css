@@ -44,17 +44,35 @@
 
 .nav-main {
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .nav-main a {
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-weight: 500;
     padding: 1.4rem 2rem;
-    color: inherit;
+    color: rgb(218, 218, 218);
+    letter-spacing: 1px;
+}
+
+.nav-item a:hover,
+.title-top:hover,
+.discovery-btn:hover {
+    text-decoration: none;
+}
+
+.nav-item a .label {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    bottom: 36%;
+    width: initial;
+}
+
+.nav-item img {
+    border-radius: 0;
 }
 
 .nav-menu i {
@@ -66,6 +84,8 @@
     background-color: var(--alpha-bg);
     font-weight: 600;
     border-left: 2px solid var(--purple-primary);
+    cursor: pointer;
+    color: var(--white);
 }
 
 .sidebar-divide {
@@ -92,15 +112,15 @@
     background-color: var(--purple-primary);
     color: var(--white);
     padding: 2rem 1rem;
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     border-radius: 1rem;
     text-align: center;
 }
 
 .text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .login-btn {
@@ -110,6 +130,7 @@
     border-radius: 6rem;
     border: 1px solid var(--white);
     background-color: var(--sidebar-bg);
+    font-size: inherit;
 }
 
 div.playlist-sidebar button {
@@ -127,7 +148,6 @@ div.playlist-sidebar button {
     border: 0;
 }
 
-
 .zm-header {
     display: flex;
     position: fixed;
@@ -144,9 +164,13 @@ div.playlist-sidebar button {
 .zm-btn {
     border: 0;
     color: #595462;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0 1rem;
     background-color: var(--layout-bg);
+}
+
+.level .zm-btn {
+    margin-right: 2rem;
 }
 
 .zm-header .level {
@@ -175,11 +199,10 @@ div.playlist-sidebar button {
     border-radius: 2rem;
     height: 4rem;
     background-color: var(--alpha-bg);
-
 }
 
 input::placeholder {
-    color: var(--white);
+    color: rgb(218, 218, 218);
 }
 
 .input-wrapper {
@@ -194,7 +217,6 @@ input::placeholder {
     margin: 0;
     display: inline-block;
     width: 100%;
-    font-size: 1.4rem;
     color: var(--search-text);
     border: 0;
     position: relative;
@@ -202,6 +224,7 @@ input::placeholder {
     height: 3.4rem;
     padding: 5px 0;
     background-color: transparent;
+    font-size: inherit;
 }
 
 .search-content button {
@@ -212,7 +235,6 @@ input::placeholder {
     top: 1rem;
 }
 
-
 .level-right {
     display: flex;
     min-width: 30rem;
@@ -220,6 +242,25 @@ input::placeholder {
     position: relative;
     margin-left: 1rem;
     justify-content: space-between;
+}
+
+.download {
+    background-color: var(--alpha-bg);
+    border-radius: 2rem;
+    position: relative;
+}
+
+.btn-download {
+    display: flex;
+    padding: 1rem 2.4rem;
+    align-items: center;
+    color: var(--link-text-hover);
+}
+
+.btn-download:hover {
+    color: var(--purple-primary);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .setting-item .zm-btn {
@@ -234,6 +275,10 @@ input::placeholder {
     color: var(--white);
 }
 
+.zm-btn:hover {
+    cursor: pointer;
+}
+
 .user-setting .zm-btn {
     width: 4rem;
     height: 4rem;
@@ -243,23 +288,6 @@ input::placeholder {
 
 .user-setting img {
     border-radius: 2rem;
-}
-
-.download {
-    background-color: var(--alpha-bg);
-    border-radius: 2rem;
-    position: relative;
-}
-
-.btn-download {
-    display: flex;
-    padding: 1rem 2.4rem;
-    align-items: center;
-    color: var(--purple-primary);
-}
-
-.btn-download:hover {
-    color: var(--plus-package);
 }
 
 .container {
@@ -278,7 +306,7 @@ main.section {
 }
 
 main.section>.contents {
-    margin-top: 8rem;
+    margin-top: 10rem;
     height: 100vh;
 }
 
@@ -286,10 +314,15 @@ main.section>.contents {
     border-radius: 1rem;
 }
 
-.image-zc {
+.image-zc, .zm-chart .zm-card-image {
     width: 20rem;
-    margin: 0;
 }
+
+.zm-chart h4:hover,.zm-chart a:hover {
+    color: var(--purple-primary);
+    text-decoration: none;
+}
+
 
 .zm-card-content .title {
     font-size: 1.6rem;
@@ -327,18 +360,80 @@ main.section>.contents {
     width: 100%;
 }
 
-.media:hover {
+.opacity {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-alpha-50);
+    visibility: hidden;
+}
+
+.opacity:hover {
+    visibility: hidden;
+}
+
+.zm-actions-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.zm-actions {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 2rem;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action-play {
+    color: var(--white);
+    height: 0;
+    visibility: hidden;
+}
+
+.list-media:hover .action-play,
+.list-media:hover .opacity, .list-media:hover .media-ellipsis {
+    visibility: visible;
+}
+
+.list-media:hover {
     background-color: var(--alpha-bg);
+}
+
+.media-ellipsis {
+    position: absolute;
+    color: var(--white);
+    right: 0;
+    top: 30%;
+    height: 0;
+    visibility: hidden;
 }
 
 .media-song {
     display: flex;
     padding: 6px 0;
+    position: relative;
 }
 
 .song-img {
     width: 6rem;
     margin-right: 1rem;
+    position: relative;
 }
 
 .media-song .right {
@@ -352,11 +447,6 @@ main.section>.contents {
 .list {
     width: 100%;
     padding: 0 2rem;
-}
-
-.title-wrapper {
-    font-weight: 400;
-    font-size: 1.4rem;
 }
 
 .link,
@@ -377,10 +467,29 @@ img {
 }
 
 .zm-card-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 2rem;
     color: var(--text-secondary);
+}
+
+.zm-card-image {
+    position: relative;
+}
+
+.zm-card-image:hover .opacity, .zm-card-image:hover .zm-tooltip-btn, .zm-card-image:hover .action-play {
+    visibility: visible;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+}
+
+.zm-actions .zm-tooltip-btn {
+    height: 0;
+    color: var(--white);
+    visibility: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -397,6 +506,14 @@ img {
     border-radius: 1rem;
 }
 
+.bxh-wrapper .song-img {
+    width: 10rem;
+}
+
+.media:hover .action-play {
+    visibility: visible;
+}
+
 .order {
     opacity: 0.5;
     font-size: 2.5rem;
@@ -411,10 +528,9 @@ img {
     color: var(--text-secondary);
 }
 
-
 .title-top {
     text-transform: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -424,23 +540,23 @@ img {
 
 .radio-content {
     padding: 1rem;
-    position: relative;
 }
 
 .top-content .zm-card-image {
-    display: block;
-    position: relative;
     overflow: hidden;
     border-radius: 16rem;
+    cursor: pointer;
+}
+
+.top-content {
+    position: relative;
 }
 
 .label {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
-    top: 50%;
     bottom: 0;
-    width: 25%;
 }
 
 .bottom-content {
@@ -449,12 +565,8 @@ img {
     top: 1.5rem;
 }
 
-.bottom-content .title {
-    font-size: 1.4rem;
-}
-
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text-secondary);
 }
 
@@ -465,6 +577,16 @@ img {
 
 .music-partner .title {
     text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.music-partner .title:hover {
+    cursor: pointer;
+    color: var(--purple-primary);
 }
 
 .partner-wrapper {
@@ -475,7 +597,6 @@ img {
 }
 
 .zm-partner-item {
-    border-radius: 2rem;
     overflow: hidden;
     width: 20rem;
     padding: 0 1rem;
@@ -508,6 +629,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 1rem;
 }
 
 .zm-player {
@@ -563,27 +685,84 @@ img {
     padding-top: 1rem;
 }
 
+.level-item .left {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.level-item .right {
+    margin-left: 10px;
+}
+
+.level-item .time {
+    min-width: 4rem;
+    font-size: 1.4rem;
+    color: var(--player-text);
+    font-weight: 500;
+}
+
 .level-center .button {
     color: var(--white);
 }
 
-.level-center .zm-duration-bar {
-    height: 3px;
-    width: 100%;
+.bar {
     display: flex;
+    width: 100%;
     justify-content: center;
+}
+
+.level-center .zm-duration-bar {
+    width: 100%;
+    cursor: pointer;
     position: relative;
-    top: 8px;
+    height: 3px;
     background-color: var(--alpha-bg);
+    top: 6px;
+    border-radius: 5px;
+}
+
+@keyframes changewidth {
+    from {
+      width: 1%;
+    }
+  
+    to {
+      width: 100%;
+    }
 }
 
 .level-item .zm-duration-bar .zm-slider-bar {
-    width: 20%;
-    height: 2px;
-    border-radius: 5px;
-    background-color: white;
+    width: 25%;
+    height: 3px;
+    background-color: var(--white);
+    animation-duration: 10s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.zm-duration-bar:hover {
+    height: 5px;
+}
+
+.zm-duration-bar:hover .zm-slider-handle {
+    visibility: visible;
+}
+
+.zm-duration-bar:hover .zm-slider-bar {
+    height: 5px;
+}
+
+.zm-slider-handle {
     position: absolute;
-    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    left: 25%;
+    top: 25%;
+    transform: translate(-25%, -25%);
+    border-radius: 50%;
+    visibility: hidden;
 }
 
 .level-item {
@@ -597,8 +776,26 @@ img {
     top: 2rem;
 }
 
+.player-control-right .divide {
+    height: 3rem;
+    width: 2px;
+    background-color: var(--border-player);
+    margin: 0 2rem;
+}
+
 .player-control-right .button,
 .player-control-left .button {
+    font-size: 1.6rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
-    font-size: 1.5rem;
+    margin: 0;
+}
+
+.player-control-right .button:hover,
+.player-control-left .button:hover {
+    background-color: var(--alpha-bg);
 }
