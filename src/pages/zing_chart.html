@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#zingchart Xem bài hát, album, MV đang hot nhất hiện tại</title>
+    <link rel="stylesheet" href="../css/zing_chart.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/manifest/2/manifest.json">
+    <link rel="icon" type="image/png" href="https://static-zmp3.zmdcdn.me/skins/zmp3-v5.2/images/icon_zing_mp3_60.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="layout section player">
+        <aside class="sidebar">
+            <div class="sidebar-wrapper">
+                <nav class="navbar">
+                    <div class="nav-logo">
+                        <button class="zm-btn button">
+                            <div class="zm-logo"></div>
+                        </button>
+                    </div>
+                </nav>
+                <nav class="navbar nav-main ">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a title="Khám Phá"><i class="fa-regular fa-eye"></i><span>Khám
+                                    Phá</span></a></li>
+                        <li class="nav-item"><a title="#Zingchart"><i
+                                    class="fa-solid fa-life-ring"></i><span>#Zingchart</span></a> </li>
+                        <li class="nav-item"><a title="Radio"><i class="fa-solid fa-radio"></i><span>Radio</span>
+                                <figure class="image label is-48x48">
+                                    <img src="https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/live-tag.svg"
+                                        alt="">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a title="Thư Viện"><i class="fa-solid fa-image"></i><span>Thư
+                                    Viện</span></a></li>
+                    </ul>
+                </nav>
+                <div class="sidebar-divide"></div>
+                <div class="navbar-main">
+                    <nav class="navbar nav-main">
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a title="Nhạc Mới"><i class="fa-solid fa-music"></i><span>Nhạc
+                                        Mới</span></a></li>
+                            <li class="nav-item"> <a title="Chủ Đề $ Thể Loại"><i
+                                        class="fa-solid fa-briefcase"></i><span>Chủ Đề $ Thể Loại</span></a></li>
+                            <li class="nav-item"><a title="Top 100"><i class="fa-solid fa-star"></i><span>Top
+                                        100</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="login-nav">
+                        <div class="text">Đăng nhập để khám phá playlist dành cho bạn</div>
+                        <button class="login-btn"><span>Đăng Nhập</span></button>
+                    </div>
+                </div>
+                <div class="playlist-sidebar">
+                    <button class="zm-btn button"><i class="fa-solid fa-plus"></i><span>Tạo playlist mới</span></button>
+                </div>
+            </div>
+        </aside>
+        <header class="zm-header">
+            <div class="level">
+                <div class="level-left">
+                    <button class="zm-btn button" tabindex="0"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="zm-btn button" tabindex="0"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    <form class="search">
+                        <div class="search-content is-collapse">
+                            <button class="zm-btn button" tabindex="0"><i class="fa fa-search"></i></button>
+                            <div class="input-wrapper"><input type="text" class="form-search z-input-placeholder"
+                                    placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." value="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="level-right">
+                    <div class="download">
+                        <a class="btn-download"><i class="fa-sharp fa-solid fa-download"></i><span>Tải bải
+                                Windows</span></a>
+                    </div>
+                    <div class="setting-item">
+                        <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0"><i
+                                class="fa-sharp fa-solid fa-gear"></i></button>
+                    </div>
+                    <div class="user-setting">
+                        <button class="zm-btn button" tabindex="0">
+                            <figure class="image is-38x38 is-rounded">
+                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.40/static/media/user-default.3ff115bb.png"
+                                    alt="">
+                            </figure>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <main class="section" id="scroll">
+                <div class="contents section-contents">
+                    <div class="section-header">
+                        <div class="chart-title">
+                            <h3 class="title" title="24H">#zingchart</h3>
+                            <button class="zm-btn button" tabindex="0">
+                                <i class="icon">
+                                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                        <g filter="url(#filter0_d_3141_46346)">
+                                            <circle cx="22" cy="21" r="18" fill="#FEFFFF"></circle>
+                                        </g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18.8449 13.5557C18.1011 13.14 17.7292 12.9322 17.4248 12.9672C17.1591 12.9977 16.9187 13.1388 16.7624 13.3558C16.5833 13.6045 16.5833 14.0305 16.5833 14.8825V27.1179C16.5833 27.9698 16.5833 28.3958 16.7624 28.6445C16.9186 28.8615 17.1591 29.0026 17.4247 29.0331C17.7292 29.0681 18.101 28.8604 18.8447 28.4448L29.7922 22.3277C30.568 21.8942 30.9559 21.6775 31.0849 21.3922C31.1973 21.1434 31.1973 20.8584 31.0849 20.6096C30.956 20.3243 30.5681 20.1076 29.7923 19.674L18.8449 13.5557Z"
+                                            fill="#141414"></path>
+                                    </svg>
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="prefix-chart-promote"><span>Gợi ý</span></div>
+                                <div class="song-thumb">
+                                    <figure class="image is-40x40" title="B52"><img
+                                            src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/a/b/e/7/abe743b74d0399694978a4700bb7d8fb.jpg"
+                                            alt="">
+                                    </figure>
+                                    <div class="opacity "></div>
+                                    <div class="zm-actions-container">
+                                        <div class="zm-box zm-actions">
+                                            <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                tabindex="0">
+                                                <i class="icon ic-like"></i></button>
+                                            <button class="zm-btn action-play  button" tabindex="0">
+                                                <i class="fa-solid fa-play"></i></button>
+                                            <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                tabindex="0">
+                                                <i class="icon ic-more"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-inf0">
+                                    <div class="title-wrapper"><span class="item-title title">B52</span></div>
+                                    <h3 class="is-one-line is-truncate subtitle">
+                                        <a class="is-ghost" href="/Thu-Minh">Thu Minh</a>,
+                                        <a class="is-ghost" href="/Noo-Phuoc-Thinh">Noo Phước Thịnh</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="media-content">
+                                <div class="album-info"><span>B52 (Single)</span></div>
+                            </div>
+                            <div class="media-right">
+                                <div class="items">
+                                    <div class="level">
+                                        <div class="level-item">
+                                            <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0">
+                                                <i class="fa-solid fa-film"></i></button>
+                                        </div>
+                                        <div class="level-item">
+                                            <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0">
+                                                <i class="fa-solid fa-microphone-lines"></i></button>
+                                        </div>
+                                        <div class="level-item">
+                                            <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0">
+                                                <i class="fa-solid fa-heart"></i></button>
+                                        </div>
+                                        <div class="level-item">
+                                            <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0">
+                                                <i class="fa-solid fa-ellipsis"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="action-items">
+                                    <div class="level">
+                                        <div class="level-item duration">03:36</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list ratings">
+                        <div class="chart-song-item fist">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">1</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Ngày Mai Người Ta Lấy Chồng"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/f/9/3/9/f9390ab7a26adbe59739fe2ba9470ee1.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Ngày Mai Người Ta Lấy
+                                                Chồng</span></div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thành Đạt</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Ngày Mai Người Ầy Lấy Chồng (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">06:02</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item second">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">2</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Đùa Hơi Quá"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/banner/f/1/5/4/f154fd207ceb9bafbe9a77494158104c.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Đùa Hơi Quá</span>
+                                        </div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Le-Bao-Binh">Lê Bảo Bình</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Đùa Hơi Quá (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">05:09</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item third">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">3</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Mưa Tháng Sáu"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/6/8/7/7/68776bade941ba88073f7d075c0fb955.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Mưa Tháng Sáu </span>
+                                        </div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Van-mai-huong">Văn Mai Hương</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Mưa Tháng Sáu (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">04:17</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">4</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Hoa Cỏ Lau"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/5/2/2/3/522398904febc498797880c6af3ad3c3.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Hoa Cỏ Lau</span>
+                                        </div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Phong-Max</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Hoa Cỏ Lau (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">03:31</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">5</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Mưa Tháng Sáu"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/6/8/7/7/68776bade941ba88073f7d075c0fb955.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Kẻ Viết Ngôn
+                                                Tình</span></div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Châu Khải Phong</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Kẻ Viết Ngôn Tình (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i>
+                                                </button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">05:34</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">6</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Trách Duyên Trách Phận"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/b/e/e/c/beeca09b8a856f4dc6d32ee63b6f9d1a.jpg"
+                                                alt=""></figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Trách Duyên Trách
+                                                Phận</span></div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Đỗ Thành Duy</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Trách Duyên Trách Phận (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">04:35</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">7</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="cô ấy của anh ấy"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/4/c/d/3/4cd32d2022a31a33febcdd41379420ad.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Cô Ấy Của Anh
+                                                Ấy</span></div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Bảo Anh</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Cô ẤY Của Anh ấy (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">04:35</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">8</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Có Ai Hẹn Hò Cùng Em Chưa"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/b/2/a/1/b2a1985db9418bdd990dccf925ece319.jpg"
+                                                alt=""></figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Có Ai Hẹn Hò Cùng Em
+                                                Chưa</span></div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Quân A.P</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Có Ai Hẹn Hò Cùng Em Chưa (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">05:09</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">9</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Phố Hoa Lệ"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/9/c/e/f/9cef213c19ead72f3d7c549e9f66af16.jpg"
+                                                alt=""></figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Phố Hoa Lệ</span>
+                                        </div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Chu Bin</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Phố Hoa Lệ (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">05:01</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-song-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="song-prefix">
+                                        <span class="number is-top-1 is-center">10</span>
+                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                    </div>
+                                    <div class="song-thumb">
+                                        <figure class="image is-40x40" title="Ngoài 30"><img
+                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/c/e/3/4/ce34451501c9e64070402a50f7660c07.jpg"
+                                                alt="">
+                                        </figure>
+                                        <div class="opacity "></div>
+                                        <div class="zm-actions-container">
+                                            <div class="zm-box zm-actions">
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-like"></i></button>
+                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                    <i class="fa-solid fa-play"></i></button>
+                                                <button class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="icon ic-more"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="title-wrapper"><span class="item-title title">Ngoài 30</span></div>
+                                        <h3 class="is-one-line is-truncate subtitle">
+                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thái Học</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <div class="album-info"><span>Ngoài 30 (Single)</span></div>
+                                </div>
+                                <div class="media-right">
+                                    <div class="items">
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-microphone-lines"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-heart"></i></button>
+                                            </div>
+                                            <div class="level-item">
+                                                <button class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                    tabindex="0">
+                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-items">
+                                        <div class="level">
+                                            <div class="level-item duration">04:47</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-center">
+                        <button class="zm-btn show-all is-outlined button" tabindex="0">Xem top 100</button>
+                    </div>
+                    <div class="container week-chart-section">
+                        <div class="bg-blur"></div>
+                        <div class="bg-alpha"></div>
+                        <div class="section-header">
+                            <a class="title" href="/zing-chart-tuan/Bai-hat-Viet-Nam/IWZ9Z08I.html">Bảng Xếp Hạng
+                                Tuần</a>
+                        </div>
+                        <div class="columns">
+                            <div class="column-list">
+                                <div class="week-chart-box">
+                                    <div class="box-header">
+                                        <a class="" href="/zing-chart-tuan/Bai-hat-Viet-Nam/IWZ9Z08I.html">Việt Nam</a>
+                                        <button class="zm-btn button" tabindex="0"><i
+                                                class="fa-solid fa-circle-play"></i></button>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">1</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Ngoài 30"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/c/e/3/4/ce34451501c9e64070402a50f7660c07.jpg"
+                                                                alt="">
+                                                        </figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Ngoài
+                                                                30</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thái Học</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:47</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">2</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40"
+                                                            title="Ngày Mai Người Ta Lấy Chồng"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/f/9/3/9/f9390ab7a26adbe59739fe2ba9470ee1.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Ngày
+                                                                Mai người Ta Lấy Chồng</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thành Đạt</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">06:02</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">3</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Mưa Tháng Sáu"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/6/8/7/7/68776bade941ba88073f7d075c0fb955.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Mưa
+                                                                Tháng Sau</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Văn Mai
+                                                                Hương</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:17</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">4</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Hoa Cỏ Lau"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/5/2/2/3/522398904febc498797880c6af3ad3c3.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Hoa Cỏ
+                                                                Lau</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Phong Max</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">03:31</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">5</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="cô ấy của anh ấy"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/4/c/d/3/4cd32d2022a31a33febcdd41379420ad.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Cô Ấy
+                                                                Của Anh Ấy</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Bảo Anh</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:35</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="is-center">
+                                        <button class="zm-btn show-all is-outlined button" tabindex="0">Xem tất
+                                            cả</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-list">
+                                <div class="week-chart-box">
+                                    <div class="box-header">
+                                        <a class="" href="/zing-chart-tuan/Bai-hat-US-UK/IWZ9Z0BW.html">US-UK</a>
+                                        <button class="zm-btn button" tabindex="0"><i
+                                                class="fa-solid fa-circle-play"></i></button>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">1</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Ngoài 30"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/c/e/3/4/ce34451501c9e64070402a50f7660c07.jpg"
+                                                                alt="">
+                                                        </figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Ngoài
+                                                                30</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thái Học</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:47</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">2</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40"
+                                                            title="Ngày Mai Người Ta Lấy Chồng"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/f/9/3/9/f9390ab7a26adbe59739fe2ba9470ee1.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Ngày
+                                                                Mai người Ta Lấy Chồng</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thành Đạt</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">06:02</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">3</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Mưa Tháng Sáu"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/6/8/7/7/68776bade941ba88073f7d075c0fb955.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Mưa
+                                                                Tháng Sau</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Văn Mai
+                                                                Hương</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:17</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">4</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Hoa Cỏ Lau"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/5/2/2/3/522398904febc498797880c6af3ad3c3.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Hoa Cỏ
+                                                                Lau</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Phong Max</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">03:31</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">5</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="cô ấy của anh ấy"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/4/c/d/3/4cd32d2022a31a33febcdd41379420ad.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Cô Ấy
+                                                                Của Anh Ấy</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Bảo Anh</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:35</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="is-center">
+                                        <button class="zm-btn show-all is-outlined button" tabindex="0">Xem tất
+                                            cả</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-list">
+                                <div class="week-chart-box">
+                                    <div class="box-header">
+                                        <a class="" href="/zing-chart-tuan/Bai-hat-KPop/IWZ9Z0BO.html">K-Pop</a>
+                                        <button class="zm-btn button" tabindex="0"><i
+                                                class="fa-solid fa-circle-play"></i></button>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">1</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Ngoài 30"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/c/e/3/4/ce34451501c9e64070402a50f7660c07.jpg"
+                                                                alt="">
+                                                        </figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Ngoài
+                                                                30</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thái Học</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:47</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">2</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40"
+                                                            title="Ngày Mai Người Ta Lấy Chồng"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/f/9/3/9/f9390ab7a26adbe59739fe2ba9470ee1.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Ngày
+                                                                Mai người Ta Lấy Chồng</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Thành Đạt</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">06:02</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">3</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Mưa Tháng Sáu"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/6/8/7/7/68776bade941ba88073f7d075c0fb955.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Mưa
+                                                                Tháng Sau</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Văn Mai
+                                                                Hương</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:17</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">4</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="Hoa Cỏ Lau"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/5/2/2/3/522398904febc498797880c6af3ad3c3.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Hoa Cỏ
+                                                                Lau</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Phong Max</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">03:31</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-zm">
+                                        <div class="chart-song-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <div class="song-prefix">
+                                                        <span class="number is-top-1 is-center">5</span>
+                                                        <div class="sort"><i class="fa-solid fa-minus"></i></div>
+                                                    </div>
+                                                    <div class="song-thumb">
+                                                        <figure class="image is-40x40" title="cô ấy của anh ấy"><img
+                                                                src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/4/c/d/3/4cd32d2022a31a33febcdd41379420ad.jpg"
+                                                                alt=""></figure>
+                                                        <div class="opacity "></div>
+                                                        <div class="zm-actions-container">
+                                                            <div class="zm-box zm-actions">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-like"></i></button>
+                                                                <button class="zm-btn action-play  button" tabindex="0">
+                                                                    <i class="fa-solid fa-play"></i></button>
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hidden is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="icon ic-more"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-info">
+                                                        <div class="title-wrapper"><span class="item-title title">Cô Ấy
+                                                                Của Anh Ấy</span></div>
+                                                        <h3 class="is-one-line is-truncate subtitle">
+                                                            <a class="is-ghost" href="/nghe-si/Thanh-Dat">Bảo Anh</a>
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="media-right">
+                                                    <div class="items">
+                                                        <div class="level">
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i
+                                                                        class="fa-solid fa-microphone-lines"></i></button>
+                                                            </div>
+                                                            <div class="level-item">
+                                                                <button
+                                                                    class="zm-btn zm-tooltip-btn is-hover-circle button"
+                                                                    tabindex="0">
+                                                                    <i class="fa-solid fa-ellipsis"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="action-items">
+                                                        <div class="level">
+                                                            <div class="level-item duration">04:35</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="is-center">
+                                        <button class="zm-btn show-all is-outlined button" tabindex="0">Xem tất
+                                            cả</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end"></div>
+                </div>
+            </main>
+        </div>
+        <div class="zm-player">
+            <div class="now-playing">
+                <div class="player-control">
+                    <div class="player-control-left level-left">
+                        <div class="media">
+                            <div class="media-song">
+                                <div class="song-img">
+                                    <figure class="image is-60x60" title="Tự Mình Đứng Dậy"><img
+                                            src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/c/a/1/9/ca1968ba730cd16787d90f328efa610d.jpg"
+                                            alt="">
+                                    </figure>
+                                </div>
+                                <div class="right">
+                                    <div class="title-wrapper"><span class="item-title has-icon title"><span>Tự Mình
+                                                Đứng Dậy</span></span></div>
+                                    <h3 class="is-one-line is-truncate subtitle"><a class="link"
+                                            href="/Thuong-Vo">Thương
+                                            Võ</a>, <a class="link" href="/ACV">ACV</a></h3>
+                                </div>
+                            </div>
+                            <div class="icon-left">
+                                <div class="level-item is-narrow">
+                                    <button class="zm-btn zm-tooltip-btn btn-mv is-hover-circle button" tabindex="0">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="level-item is-narrow">
+                                    <button class="zm-btn zm-tooltip-btn btn-karaoke is-hover-circle button"
+                                        tabindex="0">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-control-center level-center">
+                        <div class="level-item">
+                            <div class="actions">
+                                <button class="zm-btn zm-tooltip-btn btn-shuffle is-hover-circle is-active button"
+                                    tabindex="0"><i class="fa-solid fa-shuffle"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-pre is-hover-circle button" tabindex="-1"
+                                    disabled=""><i class="fa-solid fa-backward-step"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-play button" tabindex="0"><i
+                                        class="fa-solid fa-circle-play"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-next is-hover-circle button" tabindex="0"><i
+                                        class="fa-solid fa-forward-step"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-repeat is-hover-circle button" tabindex="0"><i
+                                        class="fa-solid fa-repeat"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="level-item">
+                            <span class="time left">02:31</span>
+                            <div class="bar">
+                                <div class="zm-duration-bar">
+                                    <div class="zm-slider-bar"></div>
+                                    <div class="zm-slider-handle"></div>
+                                </div>
+                            </div>
+                            <span class="time right">05:09</span>
+                        </div>
+                    </div>
+                    <div class=" player-control-right level-right">
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn zm-tooltip-btn btn-mv is-hover-circle button" tabindex="0">
+                                <i class="fa-solid fa-film"></i>
+                            </button>
+                        </div>
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn zm-tooltip-btn btn-karaoke is-hover-circle button" tabindex="0">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                            </button>
+                        </div>
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn zm-tooltip-btn btn-restore is-hover-circle button" tabindex="0">
+                                <i class="fa-solid fa-chalkboard"></i>
+                            </button>
+                        </div>
+                        <div class="level-item is-narrow">
+                            <div class="zm-player-volume">
+                                <button class="zm-btn zm-tooltip-btn btn-volume is-hover-circle button" tabindex="0">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="level-item is-narrow"><span class="divide"></span></div>
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn queue-expand-button button" tabindex="0">
+                                <div class="zm-btn button" tabindex="0"><i class="fa-solid fa-sliders"></i></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

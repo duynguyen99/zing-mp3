@@ -207,3 +207,515 @@ main.zm-section>.container {
     margin: 0 -15px 20px;
     transition: height .2s;
 }*/
+
+
+.layout {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    background-color: var(--layout-bg);
+}
+
+.sidebar {
+    width: 24rem;
+    background-color: var(--sidebar-bg);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-logo {
+    width: 24rem;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.nav-logo button {
+    display: inline-block;
+    background-color: var(--sidebar-bg);
+    border: 0;
+    height: 0;
+}
+
+.zm-logo {
+    width: 12rem;
+    height: 8rem;
+    display: inline-block;
+    background: var(--img-logo-mp3) 50%/contain no-repeat;
+}
+
+.nav-main {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.nav-main a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 1.4rem 2rem;
+    color: rgb(218, 218, 218);
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+
+.nav-item a:hover,
+.title-top:hover,
+.discovery-btn:hover {
+    text-decoration: none;
+}
+
+.nav-item a .label {
+    position: absolute;
+    top: 58%;
+    left: 40%;
+    width: initial;
+}
+
+.nav-item img {
+    border-radius: 0;
+}
+
+.nav-menu i {
+    margin-right: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.nav-item:hover {
+    background-color: var(--alpha-bg);
+    font-weight: 600;
+    border-left: 2px solid var(--purple-primary);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.nav-item  a:hover {
+    color: var(--white);
+} 
+
+.sidebar-divide {
+    position: relative;
+    height: 2px;
+}
+
+.sidebar-divide:after {
+    content: "";
+    border-top: 1px solid var(--border-primary);
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    top: 0;
+}
+
+.navbar-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login-nav {
+    background-color: var(--purple-primary);
+    color: var(--white);
+    padding: 2rem 1rem;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.login-btn {
+    padding: 5px 4rem;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 6rem;
+    border: 1px solid var(--white);
+    background-color: var(--sidebar-bg);
+    font-size: 1.4rem;
+}
+
+div.playlist-sidebar button {
+    background-color: hsla(0, 0%, 100%, 0.01);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: -1rem;
+    width: 24rem;
+    height: 8rem;
+    font-size: 1.6rem;
+    border-top: 2px solid var(--border-primary);
+    padding: 3rem 4rem;
+    color: var(--white);
+    border: 0;
+}
+
+.zm-header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    padding: 0 6rem 0 4rem;
+    height: 8rem;
+    left: 24rem;
+    width: calc(100% - 24rem);
+    z-index: 1;
+    background-color: var(--layout-bg);
+}
+
+.zm-btn {
+    border: 0;
+    color: #595462;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    background-color: var(--layout-bg);
+}
+
+.level .zm-btn {
+    margin-right: 2rem;
+}
+
+.zm-header .level {
+    display: flex;
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+}
+
+.level-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.search-content {
+    display: flex;
+    position: relative;
+    border-radius: 2rem;
+    height: 4rem;
+    background-color: var(--alpha-bg);
+}
+
+input::placeholder {
+    color: rgb(218, 218, 218);
+}
+
+.input-wrapper {
+    position: absolute;
+    top: 0;
+    left: 3.8rem;
+    right: 1rem;
+    bottom: 0;
+}
+
+.input-wrapper input {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    color: var(--search-text);
+    border: 0;
+    position: relative;
+    top: 2px;
+    height: 3.4rem;
+    padding: 5px 0;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+.search-content button {
+    position: relative;
+    font-size: 2rem;
+    color: var(--white);
+    height: 0;
+    top: 1rem;
+}
+
+.level-right {
+    display: flex;
+    min-width: 30rem;
+    height: 4rem;
+    position: relative;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+
+.download {
+    background-color: var(--alpha-bg);
+    border-radius: 2rem;
+    position: relative;
+}
+
+.btn-download {
+    display: flex;
+    padding: 1rem 2.4rem;
+    align-items: center;
+    color: var(--link-text-hover);
+}
+
+.btn-download:hover {
+    color: var(--purple-primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.setting-item .zm-btn {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--alpha-bg);
+    border-radius: 2rem;
+    margin: 0;
+    color: var(--white);
+}
+
+.zm-btn:hover {
+    cursor: pointer;
+}
+
+.user-setting .zm-btn {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    margin: 0;
+}
+
+.user-setting img {
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    width: calc(100% - 24rem);
+    height: 100vh;
+    left: 24rem;
+    top: 0;
+}
+
+main.section {
+    position: absolute;
+    inset: 0px;
+    overflow: hidden scroll;
+    padding: 0 4rem;
+}
+
+main.section > .contents {
+    margin-top: 10rem;
+    height: 100vh;
+}
+ 
+.zm-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.now-playing {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    user-select: none;
+    background-color: var(--layout-bg);
+    height: 8rem;
+}
+
+.player-control {
+    display: flex;
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 0 2rem;
+}
+
+.player-control-left .media {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.player-control-left .media-song {
+    display: flex;
+}
+
+.player-control-left .song-img {
+    width: 6rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.player-control-left .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+h3 .link {
+    font-size: 1.2rem;
+}
+
+.player-control-left img {
+    width: 100%;
+}
+
+.player-control-left {
+    width: 85rem;
+}
+
+.player-control-left .media-song {
+    padding: 0;
+}
+
+.player-control-left .media-song .right {
+    justify-content: center;
+}
+
+.icon-left {
+    margin-left: 2rem;
+    display: flex;
+}
+
+.level-center {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.level-item .left {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.level-item .right {
+    margin-left: 10px;
+}
+
+.level-item .time {
+    min-width: 4rem;
+    font-size: 1.4rem;
+    color: var(--player-text);
+    font-weight: 500;
+}
+
+.level-center .button {
+    color: var(--white);
+}
+
+.bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.level-center .zm-duration-bar {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    height: 3px;
+    background-color: var(--alpha-bg);
+    top: 6px;
+    border-radius: 5px;
+}
+
+@keyframes changewidth {
+    from {
+      width: 1%;
+    }
+  
+    to {
+      width: 100%;
+    }
+}
+
+.level-item .zm-duration-bar .zm-slider-bar {
+    width: 25%;
+    height: 3px;
+    background-color: var(--white);
+    animation-duration: 10s;
+    animation-name: changewidth;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.zm-duration-bar:hover {
+    height: 5px;
+}
+
+.zm-duration-bar:hover .zm-slider-handle {
+    visibility: visible;
+}
+
+.zm-duration-bar:hover .zm-slider-bar {
+    height: 5px;
+}
+
+.zm-slider-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    left: 25%;
+    top: 25%;
+    transform: translate(-25%, -25%);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.level-item {
+    display: flex;
+    justify-content: center;
+}
+
+.player-control-right {
+    justify-content: end;
+    align-items: center;
+    top: 2rem;
+}
+
+.player-control-right .divide {
+    height: 3rem;
+    width: 2px;
+    background-color: var(--border-player);
+    margin: 0 2rem;
+}
+
+.player-control-right .button,
+.player-control-left .button {
+    font-size: 1.6rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    margin: 0;
+}
+
+.player-control-right .button:hover,
+.player-control-left .button:hover {
+    background-color: var(--alpha-bg);
+}

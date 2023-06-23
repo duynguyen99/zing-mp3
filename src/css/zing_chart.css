@@ -65,9 +65,8 @@
 
 .nav-item a .label {
     position: absolute;
-    top: 52%;
-    left: 50%;
-    bottom: 36%;
+    top: 58%;
+    left: 40%;
     width: initial;
 }
 
@@ -85,6 +84,10 @@
     font-weight: 600;
     border-left: 2px solid var(--purple-primary);
     cursor: pointer;
+    color: var(--white);
+}
+
+.nav-item a:hover {
     color: var(--white);
 }
 
@@ -124,7 +127,7 @@
 }
 
 .login-btn {
-    padding: 4px 4rem;
+    padding: 5px 4rem;
     font-weight: 600;
     color: var(--white);
     border-radius: 6rem;
@@ -153,7 +156,7 @@ div.playlist-sidebar button {
     position: fixed;
     align-items: center;
     top: 0;
-    padding: 0 6rem 0 4rem;
+    padding: 0 8rem 0 6rem;
     height: 8rem;
     left: 24rem;
     width: calc(100% - 24rem);
@@ -288,6 +291,7 @@ input::placeholder {
 
 .user-setting img {
     border-radius: 2rem;
+    width: 100%;
 }
 
 .container {
@@ -302,62 +306,178 @@ main.section {
     position: absolute;
     inset: 0px;
     overflow: hidden scroll;
-    padding: 0 4rem;
+    padding: 0 6rem;
 }
 
 main.section>.contents {
-    margin-top: 10rem;
+    margin-top: 12rem;
     height: 100vh;
 }
 
-.gallery-wrapper img {
-    border-radius: 1rem;
+.section-header {
+    margin-bottom: 4rem;
+    position: relative;
 }
 
-.image-zc, .zm-chart .zm-card-image {
-    width: 20rem;
-}
-
-.zm-chart h4:hover,.zm-chart a:hover {
-    color: var(--purple-primary);
-    text-decoration: none;
-}
-
-
-.zm-card-content .title {
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 3rem;
-    color: var(--white);
-}
-
-.new-release .genre-select .zm-btn {
-    padding: 4px 2.4rem;
-    border: 1px solid var(--border-primary);
-    border-radius: 10rem;
-    font-weight: 300;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: var(--white);
-}
-
-.new-release .genre-select .zm-btn.active {
-    border-color: var(--purple-primary);
-    background-color: var(--purple-primary);
-}
-
-.new-release .discovery-btn {
-    position: absolute;
-    right: 4rem;
-    bottom: 6rem;
-}
-
-.column {
+.chart-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+}
+
+.chart-title .title {
+    background: linear-gradient(to right, #ff9357 1.54%, #9100ff 98.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.chart-title .zm-btn {
+    height: 4rem;
+    border-radius: 2rem;
+    margin-left: 1.4rem;
+}
+
+.list,
+.chart-song-item {
+    border-bottom: 1px solid var(--sidebar-bg);
+}
+
+.media {
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.media-left {
+    display: flex;
+    width: 50%;
+}
+
+.media-left,
+.media-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.prefix-chart-promote {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prefix-chart-promote>span {
+    text-align: center;
+    width: 80px;
+    color: var(--text-secondary);
+}
+
+.media-left .song-thumb {
+    margin-right: 10px;
+    flex-shrink: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.is-40x40 {
+    width: 4rem;
+    height: 4rem;
+}
+
+img {
     width: 100%;
+    height: auto;
+}
+
+h3 a {
+    font-size: 1.2rem;
+}
+
+.media-content {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+    align-self: center;
+    width: 0;
+}
+
+.album-info {
+    color: var(--text-secondary);
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.card-info, .item-title, .title-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album-info:hover {
+    color: var(--purple-primary);
+    text-decoration: underline;
+}
+
+.media-right {
+    margin-left: 1rem;
+}
+
+.items .button {
+    line-height: 0;
+    padding: 6px;
+    margin: 0 4px;
+    background-color: var(--alpha-bg);
+    border-radius: 2rem;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    display: none;
+}
+
+.items i {
+    font-size: 1.2rem;
+    padding: 5px;
+    color: var(--white);
+}
+
+.action-items .duration {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.media:hover {
+    background-color: var(--alpha-bg);
+}
+
+.media:hover .items {
+    display: unset;
+}
+
+.media:hover .duration {
+    display: none;
+}
+
+.media:hover .opacity,
+.media:hover .action-play {
+    visibility: visible;
 }
 
 .opacity {
@@ -367,10 +487,6 @@ main.section>.contents {
     top: 0;
     left: 0;
     background-color: var(--dark-alpha-50);
-    visibility: hidden;
-}
-
-.opacity:hover {
     visibility: hidden;
 }
 
@@ -404,233 +520,155 @@ main.section>.contents {
     color: var(--white);
     height: 0;
     visibility: hidden;
+    font-size: 2rem;
 }
 
-.list-media:hover .action-play,
-.list-media:hover .opacity, .list-media:hover .media-ellipsis {
-    visibility: visible;
-}
-
-.list-media:hover {
-    background-color: var(--alpha-bg);
-}
-
-.media-ellipsis {
-    position: absolute;
-    color: var(--white);
-    right: 0;
-    top: 30%;
-    height: 0;
-    visibility: hidden;
-}
-
-.media-song {
+.song-prefix {
     display: flex;
-    padding: 6px 0;
-    position: relative;
-}
-
-.song-img {
-    width: 6rem;
-    margin-right: 1rem;
-    position: relative;
-}
-
-.media-song .right {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    line-height: 2rem;
-}
-
-.list {
-    width: 100%;
-    padding: 0 2rem;
-}
-
-.link,
-.time-release {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-}
-
-img {
-    width: 100%;
-    border-radius: 1rem;
-}
-
-.zm-card {
-    width: 100%;
-    padding: 0 1rem;
-}
-
-.zm-card-content h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2rem;
-    color: var(--text-secondary);
-}
-
-.zm-card-image {
-    position: relative;
-}
-
-.zm-card-image:hover .opacity, .zm-card-image:hover .zm-tooltip-btn, .zm-card-image:hover .action-play {
-    visibility: visible;
-}
-
-.image img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-out;
-    overflow: hidden;
-}
-
-.zm-actions .zm-tooltip-btn {
-    height: 0;
-    color: var(--white);
-    visibility: hidden;
-}
-
-@media screen and (max-width: 1024px) {
-    .bxh-wrapper {
-        width: 100%;
-    }
-}
-
-.bxh-wrapper .media {
-    width: 100%;
-    background-color: var(--box-item-bg);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
-}
-
-.bxh-wrapper .song-img {
-    width: 10rem;
-}
-
-.media:hover .action-play {
-    visibility: visible;
-}
-
-.order {
-    opacity: 0.5;
-    font-size: 2.5rem;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    position: relative;
-}
-
-.release-date {
-    position: relative;
-    left: 4rem;
-    color: var(--text-secondary);
-}
-
-.title-top {
-    text-transform: none;
-    font-size: 1.4rem;
-    margin-top: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-}
-
-.radio-content {
-    padding: 1rem;
-}
-
-.top-content .zm-card-image {
-    overflow: hidden;
-    border-radius: 16rem;
-    cursor: pointer;
-}
-
-.top-content {
-    position: relative;
-}
-
-.label {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    bottom: 0;
-}
-
-.bottom-content {
-    text-align: center;
-    position: relative;
-    top: 1.5rem;
-}
-
-.subtitle {
-    font-size: 1.4rem;
-    color: var(--text-secondary);
-}
-
-.music-partner {
-    margin-top: 6rem;
-    padding: 0 4rem;
-}
-
-.music-partner .title {
-    text-align: center;
-    font-size: 1.4rem;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-}
-
-.music-partner .title:hover {
-    cursor: pointer;
-    color: var(--purple-primary);
-}
-
-.partner-wrapper {
-    display: flex;
-    margin-top: 4rem;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.zm-partner-item {
-    overflow: hidden;
-    width: 20rem;
-    padding: 0 1rem;
-    margin-bottom: 4rem;
-}
-
-.zm-partner-item .partner-content {
-    position: relative;
-    height: 0;
-    padding-bottom: 12rem;
-}
-
-.zm-partner {
-    width: 20rem;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1228px) {
-    .zm-partner {
-        width: 20rem;
-    }
-}
-
-.zm-partner-item .image {
-    background-color: #f7f7f7;
-    display: flex;
     align-items: center;
+    font-size: 12px;
+    margin-right: 10px;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.chart-song-item .number {
+    min-width: 4rem;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.list-zm .chart-song-item .media-left,
+ .list-zm .chart-song-item .media-right {
+    flex-grow: 1;
+}
+
+.song-prefix .sort {
+    width: 1.8rem;
+    height: 3.6rem;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.is-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.is-center .show-all {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border: 1px solid var(--white);
+    border-radius: 2rem;
+    color: var(--white);
+}
+
+.week-chart-section {
+    padding-top: 4rem;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    left: 0;
+    height: auto;
+}
+
+.week-chart-section .bg-blur {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
-    border-radius: 1rem;
+    right: 0;
+    z-index: 0;
+    background: url(https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.43/static/media/week-chart-bg.edf332e5.jpg) top/cover no-repeat;
+    filter: grayscale(1);
+    margin: 0 -6rem;
+}
+
+.week-chart-section .bg-alpha {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--chart-bg-img-alpha);
+    margin: 0 -6rem;
+}
+
+.section-header .title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-top: 0;
+}
+.section-header a:hover, .box-header a:hover {
+    text-decoration: none;
+}
+
+.week-chart-section .week-chart-box {
+    border-radius: 1.6rem;
+    background-color: var(--sidebar-bg);
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.box-header a {
+    color: var(--white);
+}
+
+
+.week-chart-section .week-chart-box .box-header .zm-btn {
+    height: 0;
+    color: var(--purple-primary);
+}
+
+.week-chart-section .week-chart-box .box-header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 1rem 4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    align-items: baseline;
+}
+
+
+@media screen and (max-width: 1290px) {
+    .column-list {
+      width: 100%;
+    }
+}
+
+@media screen and  (min-width: 1290px) {
+    .column-list {
+      width: calc(100% / 3);
+    }
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.column-list {
+    padding: 0 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.list-zm .chart-song-item {
+    border-bottom: none;
+}
+
+.end {
+    height: 5rem;
+    width: 100%;
 }
 
 .zm-player {
@@ -664,16 +702,35 @@ img {
     text-align: left;
 }
 
-.player-control-left {
-    width: 85rem;
-}
-
 .player-control-left .media-song {
+    display: flex;
     padding: 0;
 }
 
+.player-control-left .song-img {
+    width: 6rem;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.player-control-left .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
 .player-control-left .media-song .right {
     justify-content: center;
+}
+
+.player-control-left img {
+    width: 100%;
+}
+
+.player-control-left {
+    width: 85rem;
 }
 
 .icon-left {
@@ -724,11 +781,11 @@ img {
 
 @keyframes changewidth {
     from {
-      width: 1%;
+        width: 1%;
     }
-  
+
     to {
-      width: 100%;
+        width: 100%;
     }
 }
 

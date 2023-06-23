@@ -16,216 +16,195 @@
 </head>
 
 <body>
-    <div class="zm-layout">
+    <div class="layout section player">
         <aside class="sidebar">
             <div class="sidebar-wrapper">
                 <nav class="navbar">
-                    <div class="zm-navbar-brand">
-                        <div class="zm-navbar-item"><button class="zm-btn" tabindex="0">
-                                <div class="zmp3-logo"></div>
-                            </button>
-                        </div>
+                    <div class="nav-logo">
+                        <button class="zm-btn button">
+                            <div class="zm-logo"></div>
+                        </button>
                     </div>
                 </nav>
-                <nav class="navbar-main">
-                    <ul class="navbar-menu">
-                        <li class="zm-navbar-item is-active"><i class="fa-regular fa-eye"></i>
-                            <span>Khám Phá</span>
+                <nav class="navbar nav-main ">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a title="Khám Phá"><i class="fa-regular fa-eye"></i><span>Khám
+                                    Phá</span></a></li>
+                        <li class="nav-item"><a title="#Zingchart"><i
+                                    class="fa-solid fa-life-ring"></i><span>#Zingchart</span></a> </li>
+                        <li class="nav-item"><a title="Radio"><i class="fa-solid fa-radio"></i><span>Radio</span>
+                                <figure class="image label is-48x48">
+                                    <img src="https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/live-tag.svg"
+                                        alt="">
+                                </figure>
+                            </a>
                         </li>
-                        <li class="nav-item"><i class="fa-solid fa-life-ring"></i>
-                            <span>#Zingchart</span>
-                        </li>
-                        <li class="nav-item"><i class="fa-solid fa-radio"></i>
-                            <span>Radio</span>
-                        </li>
-                        <li class="nav-item nav-border"><i class="fa-solid fa-image"></i>
-                            <span>Thư Viện</span>
-                        </li>
+                        <li class="nav-item"><a title="Thư Viện"><i class="fa-solid fa-image"></i><span>Thư
+                                    Viện</span></a></li>
                     </ul>
-                    <div class="sidebar-divide"></div>
                 </nav>
-                <div class="sidebar-scrolbar">
-                    <nav class="navbar-main">
-                        <ul class="navbar-menu">
-                            <li class="nav-item nav-border"><i class="fa-solid fa-music"></i>
-                                <span>Nhạc Mới</span>
-                            <li class="nav-item nav-border"><i class="fa-solid fa-briefcase"></i>
-                                <span>Chủ Đề $ Thể Loại</span>
-                            <li class="nav-item nav-border"><i class="fa-solid fa-star"></i>
-                                <span>Top 100</span>
+                <div class="sidebar-divide"></div>
+                <div class="navbar-main">
+                    <nav class="navbar nav-main">
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a title="Nhạc Mới"><i class="fa-solid fa-music"></i><span>Nhạc
+                                        Mới</span></a></li>
+                            <li class="nav-item"> <a title="Chủ Đề $ Thể Loại"><i
+                                        class="fa-solid fa-briefcase"></i><span>Chủ Đề $ Thể Loại</span></a></li>
+                            <li class="nav-item"><a title="Top 100"><i class="fa-solid fa-star"></i><span>Top
+                                        100</span></a></li>
                         </ul>
                     </nav>
                     <div class="login-nav">
                         <div class="text">Đăng nhập để khám phá playlist dành cho bạn</div>
-                        <button class="nav-button">Đăng Nhập</button>
+                        <button class="login-btn"><span>Đăng Nhập</span></button>
                     </div>
                 </div>
+                <div class="playlist-sidebar">
+                    <button class="zm-btn button"><i class="fa-solid fa-plus"></i><span>Tạo playlist mới</span></button>
+                </div>
             </div>
-            <div class="playlist">
-                <button class="button"><i class="fa-solid fa-plus"></i>
-                    <span>Tạo playlist mới</span></button>
-            </div>
-            <button><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
         </aside>
         <header class="zm-header">
             <div class="level">
                 <div class="level-left">
-                    <button class="zm-btn disabled" tabindex="0"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="zm-btn disabled" tabindex="0"><i
-                            class="fa-sharp fa-solid fa-arrow-right"></i></button>
-                    <form class="search" action="">
-                        <div class="search-content">
-                            <button class="button-input" tabindex="0"><i class="fa fa-search"></i></button>
-                            <div class="input-content">
-                                <input type="text" placeholder="Tìm kiếm nghệ sĩ, bài hát, lời bài hát...">
+                    <button class="zm-btn button" tabindex="0"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="zm-btn button" tabindex="0"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    <form class="search">
+                        <div class="search-content is-collapse">
+                            <button class="zm-btn button" tabindex="0"><i class="fa fa-search"></i></button>
+                            <div class="input-wrapper"><input type="text" class="form-search z-input-placeholder"
+                                    placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..." value="">
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="level-right">
                     <div class="download">
-                        <button class="button-dowload"><i class="fa-sharp fa-solid fa-download"></i>
-                            <span> Tải bản Windown</span></button>
+                        <a class="btn-download"><i class="fa-sharp fa-solid fa-download"></i><span>Tải bải
+                                Windows</span></a>
                     </div>
-                    <div>
-                        <div><button class="zm-btn disabled setting"><i class="fa-sharp fa-solid fa-gear"></i></button>
-                        </div>
+                    <div class="setting-item">
+                        <button class="zm-btn zm-tooltip-btn is-hover-circle button" tabindex="0"><i
+                                class="fa-sharp fa-solid fa-gear"></i></button>
                     </div>
-                    <div><button class="zm-btn disabled use"><i class="fa-solid fa-user"></i></button>
-
+                    <div class="user-setting">
+                        <button class="zm-btn button" tabindex="0">
+                            <figure class="image is-38x38 is-rounded">
+                                <img src="https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.40/static/media/user-default.3ff115bb.png"
+                                    alt="">
+                            </figure>
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="zm-box zm-mainpage">
-            <div style="position: relative; overflow: hidden; width: 100%; height: 100%;">
-                <main class="section"
-                    style="overflow: hidden scroll; height: 100%; padding-right: 7px; padding-left: 25px;">
-                    <div class="container home-page-content">
-                        <div class="container">
-                            <div class="gallery" style="padding-top: 100px;">
-                                <div class="gallery-container" style="height: 243.788px;">
-                
-                                    <div class="gallery-item gallery-item-previous" >
-                                        <div class="zm-card"><a title=""
-                                                href="/bai-hat/Muoi-Phan-Ven-Muoi-Ho-Quang-Hieu/Z6B6ZD8U.html">
-                                                <div class="zm-card-image">
-                                                    <figure class="image is-48x48"><img
-                                                            src="https://photo-zmp3.zmdcdn.me/banner/4/a/7/5/4a75743de6751ff1fd3f8bcc9be8014b.jpg"
-                                                            alt=""></figure>
-                                                </div>
-                                                <div class="zm-card-content">
-                                                    <div class="title"></div>
-                                                    <h3 class="subtitle"></h3>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="gallery-item gallery-item-selected">
-                                        <div class="zm-card"><a title=""
-                                                href="/playlist/V-Pop-Day-Hua-Hen/ZWZCOBEF.html">
-                                                <div class="zm-card-image">
-                                                    <figure class="image is-48x48"><img
-                                                            src="https://photo-zmp3.zmdcdn.me/banner/f/3/b/1/f3b1c8aa36568bbe7b17a2019ef842ef.jpg"
-                                                            alt=""></figure>
-                                                </div>
-                                                <div class="zm-card-content">
-                                                    <div class="title"></div>
-                                                    <h3 class="subtitle"></h3>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="gallery-item gallery-item-next">
-                                        <div class="zm-card"><a title=""
-                                                href="/bai-hat/Ta-Chang-Con-La-Cua-Nhau-JayKii/Z6BIUO7E.html">
-                                                <div class="zm-card-image">
-                                                    <figure class="image is-48x48"><img
-                                                            src="https://photo-zmp3.zmdcdn.me/banner/e/6/b/f/e6bf6c94c1df3400ae026dc16197465c.jpg"
-                                                            alt=""></figure>
-                                                </div>
-                                                <div class="zm-card-content">
-                                                    <div class="title"></div>
-                                                    <h3 class="subtitle"></h3>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="gallery-item gallery-item-last">
-                                        <div class="zm-card"><a title=""
-                                                href="/album/Nhac-Moi-Moi-Tuan-Bao-Anh-Suni-Ha-Linh-Stray-Kids-The-Weeknd/67WIO6CF.html">
-                                                <div class="zm-card-image">
-                                                    <figure class="image is-48x48"><img
-                                                            src="https://photo-zmp3.zmdcdn.me/banner/8/6/a/a/86aa486763aa67e8ef3bd350d3276d55.jpg"
-                                                            alt=""></figure>
-                                                </div>
-                                                <div class="zm-card-content">
-                                                    <div class="title"></div>
-                                                    <h3 class="subtitle"></h3>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="gallery-item gallery-item-add">
-                                        <div class="zm-card"><a title=""
-                                                href="/playlist/Rap-Viet-Ngay-Nay/ZE7BW00W.html">
-                                                <div class="zm-card-image">
-                                                    <figure class="image is-48x48"><img
-                                                            src="https://photo-zmp3.zmdcdn.me/banner/3/b/d/b/3bdb5a8a11c1131d96af59eb9988f871.jpg"
-                                                            alt=""></figure>
-                                                </div>
-                                                <div class="zm-card-content">
-                                                    <div class="title"></div>
-                                                    <h3 class="subtitle"></h3>
-                                                </div>
-                                            </a></div>
-                                    </div>
-                                    <div class="gallery-item gallery-item-first">
-                                        <div class="zm-card"><a title=""
-                                                href="/album/K-Pop-Perfect-All-Kill-NewJeans-G-I-DLE-IVE-BIGBANG/ZO69O690.html">
-                                                <div class="zm-card-image">
-                                                    <figure class="image is-48x48"><img
-                                                            src="https://photo-zmp3.zmdcdn.me/banner/f/8/a/e/f8ae4357308334196e4462150234d9a7.jpg"
-                                                            alt=""></figure>
-                                                </div>
-                                                <div class="zm-card-content">
-                                                    <div class="title"></div>
-                                                    <h3 class="subtitle"></h3>
-                                                </div>
-                                            </a></div>
-                                    </div>
+        <div class="container">
+            <main class="section" id="scroll">
+                <div class="contents section-contents">
+
+                </div>
+            </main>
+        </div>
+        <div class="zm-player">
+            <div class="now-playing">
+                <div class="player-control">
+                    <div class="player-control-left level-left">
+                        <div class="media">
+                            <div class="media-song">
+                                <div class="song-img">
+                                    <figure class="image is-60x60" title="Tự Mình Đứng Dậy"><img
+                                            src="https://photo-resize-zmp3.zmdcdn.me/w94_r1x1_webp/cover/c/a/1/9/ca1968ba730cd16787d90f328efa610d.jpg"
+                                            alt="">
+                                    </figure>
+                                </div>
+                                <div class="right">
+                                    <div class="title-wrapper"><span class="item-title has-icon title"><span>Tự Mình
+                                                Đứng Dậy</span></span></div>
+                                    <h3 class="is-one-line is-truncate subtitle"><a class="link"
+                                            href="/Thuong-Vo">Thương Võ</a>, <a class="link" href="/ACV">ACV</a></h3>
+                                </div>
+                            </div>
+                            <div class="icon-left">
+                                <div class="level-item is-narrow">
+                                    <button class="zm-btn zm-tooltip-btn btn-mv is-hover-circle button" tabindex="0">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="level-item is-narrow">
+                                    <button class="zm-btn zm-tooltip-btn btn-karaoke is-hover-circle button"
+                                        tabindex="0">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </main>
-            </div>
-
-        </div>
-</body>
-<div class="playlist-wrapper is-normal">
-    <div class="playlist-wrapper is-normal">
-        <div class="zm-card">
-            <div>
-                <a class="" title="Top 100 Nhạc Hàn Quốc Hay Nhất"
-                    href="/album/Top-100-Nhac-Han-Quoc-Hay-Nhat-Jimin-TWICE-JISOO-Agust-D/ZWZB96DC.html">
-                    <div class="zm-card-image">
-                        <figure class="image is-48x48"><img
-                                src="https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/cover/4/a/4/d/4a4df4865776fc67e99412a3f99e64b6.jpg"
-                                alt=""></figure>
+                    <div class="player-control-center level-center">
+                        <div class="level-item">
+                            <div class="actions">
+                                <button class="zm-btn zm-tooltip-btn btn-shuffle is-hover-circle is-active button"
+                                    tabindex="0"><i class="fa-solid fa-shuffle"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-pre is-hover-circle button" tabindex="-1"
+                                    disabled=""><i class="fa-solid fa-backward-step"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-play button" tabindex="0"><i
+                                        class="fa-solid fa-circle-play"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-next is-hover-circle button" tabindex="0"><i
+                                        class="fa-solid fa-forward-step"></i>
+                                </button>
+                                <button class="zm-btn zm-tooltip-btn btn-repeat is-hover-circle button" tabindex="0"><i
+                                        class="fa-solid fa-repeat"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="level-item">
+                            <span class="time left">02:31</span>
+                            <div class="bar">
+                                <div class="zm-duration-bar">
+                                    <div class="zm-slider-bar"></div>
+                                    <div class="zm-slider-handle"></div>
+                                </div>
+                            </div>
+                            <span class="time right">05:09</span>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="zm-card-content">
-                <h4 class="title is-6"><a class="title-top"
-                        title="Top 100 Nhạc Hàn Quốc Hay Nhất"
-                        href="/album/Top-100-Nhac-Han-Quoc-Hay-Nhat-Jimin-TWICE-JISOO-Agust-D/ZWZB96DC.html"><span>Tops
-                            100 Nhạc Hàn Quốc…</span>
-                    </a>
-                </h4>
-                <h3 class="mt-10 subtitle">
-                    <a class="is-ghost" href="/Jimin-BTS">Jimin</a>,
-                    <a class="is-ghost" href="/TWICE">TWICE</a>,
-                    <a class="is-ghost" href="/nghe-si/Jisoo-BLACKPINK">JISOO</a>...
-                </h3>
+                    <div class=" player-control-right level-right">
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn zm-tooltip-btn btn-mv is-hover-circle button" tabindex="0">
+                                <i class="fa-solid fa-film"></i>
+                            </button>
+                        </div>
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn zm-tooltip-btn btn-karaoke is-hover-circle button" tabindex="0">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                            </button>
+                        </div>
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn zm-tooltip-btn btn-restore is-hover-circle button" tabindex="0">
+                                <i class="fa-solid fa-chalkboard"></i>
+                            </button>
+                        </div>
+                        <div class="level-item is-narrow">
+                            <div class="zm-player-volume">
+                                <button class="zm-btn zm-tooltip-btn btn-volume is-hover-circle button" tabindex="0">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="level-item is-narrow"><span class="divide"></span></div>
+                        <div class="level-item is-narrow">
+                            <button class="zm-btn queue-expand-button button" tabindex="0">
+                                <div class="zm-btn button" tabindex="0"><i class="fa-solid fa-sliders"></i></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</body>
+
 </html>

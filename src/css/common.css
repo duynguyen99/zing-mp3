@@ -9,8 +9,6 @@
     --yellow: #f8e71c;
     --blue: #4a90e2;
     --green: #50e3c2;
-    --red: #e35050;
-    --gray: #dbdbdb;
     --search-text: #eee;
     --box-item-bg: hsla(0,0%,100%,0.1);
     --text-secondary: hsla(0,0%,100%,0.5);
@@ -23,6 +21,7 @@
     --sidebar-bg: hsla(0, 0%, 100%, 0.05);
     --border-primary: hsla(0,0%,100%,0.1);
     --border-player: hsla(0,0%,100%,0.1);
+    --chart-bg-img-alpha: rgba(32,19,53,0.9);
     --img-logo-mp3: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-dark.svg);
 }
 
