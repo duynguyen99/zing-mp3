@@ -37,14 +37,14 @@
 
 .zm-logo {
     width: 12rem;
-    height: 8rem;
+    height: 7rem;
     display: inline-block;
     background: var(--img-logo-mp3) 50%/contain no-repeat;
 }
 
 .nav-main {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
 }
 
 .nav-main a {
@@ -55,6 +55,8 @@
     color: rgb(218, 218, 218);
     letter-spacing: 1px;
     font-size: 1.4rem;
+    position: relative;
+    letter-spacing: normal;
 }
 
 .nav-item a:hover,
@@ -65,8 +67,8 @@
 
 .nav-item a .label {
     position: absolute;
-    top: 58%;
-    left: 40%;
+    bottom: 1.2rem;
+    left: 9.5rem;
     width: initial;
 }
 
@@ -76,7 +78,7 @@
 
 .nav-menu i {
     margin-right: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .nav-item:hover {
@@ -100,8 +102,8 @@
     content: "";
     border-top: 1px solid var(--border-primary);
     position: absolute;
-    left: 2rem;
-    right: 2rem;
+    left: 2.5rem;
+    right: 2.5rem;
     top: 0;
 }
 
@@ -121,13 +123,13 @@
 }
 
 .text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
 .login-btn {
-    padding: 5px 4rem;
+    padding: 6px 3.5rem;
     font-weight: 600;
     color: var(--white);
     border-radius: 6rem;
@@ -140,15 +142,23 @@ div.playlist-sidebar button {
     background-color: hsla(0, 0%, 100%, 0.01);
     display: flex;
     align-items: center;
-    position: fixed;
-    left: -1rem;
-    width: 24rem;
-    height: 8rem;
-    font-size: 1.6rem;
-    border-top: 2px solid var(--border-primary);
-    padding: 3rem 4rem;
+    font-size: 1.4rem;
     color: var(--white);
     border: 0;
+    bottom: 8rem;
+    position: fixed;
+    width: 24rem;
+    left: 0;
+    height: 6rem;
+    border-top: 1px solid var(--border-primary);
+    padding: 0 3rem;
+    border-radius: 0;
+    font-weight: 300;
+    margin: 0;
+}
+
+.playlist-sidebar span {
+    margin-left: 1rem;
 }
 
 .zm-header {
@@ -167,13 +177,9 @@ div.playlist-sidebar button {
 .zm-btn {
     border: 0;
     color: #595462;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin: 0 1rem;
     background-color: var(--layout-bg);
-}
-
-.level .zm-btn {
-    margin-right: 2rem;
 }
 
 .zm-header .level {
@@ -227,7 +233,8 @@ input::placeholder {
     height: 3.4rem;
     padding: 5px 0;
     background-color: transparent;
-    font-size: inherit;
+    font-size: 1.4rem;
+    outline: none;
 }
 
 .search-content button {
@@ -278,6 +285,26 @@ input::placeholder {
     color: var(--white);
 }
 
+.setting-item {
+    position: relative;
+}
+
+.setting-item .tooltip-text {
+    position: absolute;
+    width: 6rem;
+    background-color: gray;
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+.setting-item:hover .tooltip-text {
+    visibility: visible;
+}
+
 .zm-btn:hover {
     cursor: pointer;
 }
@@ -315,7 +342,7 @@ main.section>.contents {
 }
 
 .section-header {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
@@ -344,6 +371,14 @@ main.section>.contents {
     border-bottom: 1px solid var(--sidebar-bg);
 }
 
+.ratings {
+    padding-bottom: 3rem;
+}
+
+.chart-song-item-end {
+    margin-top: 2rem;
+}
+
 .media {
     align-items: center;
     display: flex;
@@ -351,11 +386,13 @@ main.section>.contents {
     padding: 10px;
     border-radius: 5px;
     font-size: 1.4rem;
+    position: relative;
 }
 
 .media-left {
     display: flex;
     width: 50%;
+    align-items: center;
 }
 
 .media-left,
@@ -385,7 +422,9 @@ main.section>.contents {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
-    cursor: pointer
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
 }
 
 .is-40x40 {
@@ -400,6 +439,7 @@ img {
 
 h3 a {
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .media-content {
@@ -419,8 +459,13 @@ h3 a {
     max-width: 100%;
 }
 
-.card-info, .item-title, .title-wrapper {
+.card-info {
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.media:hover .title-wrapper {
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -430,8 +475,9 @@ h3 a {
     text-decoration: underline;
 }
 
-.media-right {
+.list-zm .media-right {
     margin-left: 1rem;
+    width: 0;
 }
 
 .items .button {
@@ -439,7 +485,9 @@ h3 a {
     padding: 6px;
     margin: 0 4px;
     background-color: var(--alpha-bg);
-    border-radius: 2rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem
 }
 
 .level {
@@ -467,6 +515,11 @@ h3 a {
     background-color: var(--alpha-bg);
 }
 
+.chart-song-item-end button:hover,
+.week-chart-section .is-center .zm-btn:hover {
+    background-color: var(--alpha-bg);
+}
+
 .media:hover .items {
     display: unset;
 }
@@ -477,6 +530,23 @@ h3 a {
 
 .media:hover .opacity,
 .media:hover .action-play {
+    visibility: visible;
+}
+
+.tooltip {
+    position: absolute;
+    width: 8rem;
+    background-color: gray;
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    font-size: 1rem;
+    bottom: 5rem;
+    visibility: hidden;
+}
+
+.level-item:hover .tooltip {
     visibility: visible;
 }
 
@@ -523,27 +593,162 @@ h3 a {
     font-size: 2rem;
 }
 
+.new {
+    width: 32rem;
+    height: 24rem;
+    background-color: #34224f;
+    position: absolute;
+    top: 5rem;
+    left: 16rem;
+    z-index: 3;
+    display: none;
+}
+
+.avatar {
+    width: 5rem;
+    position: relative;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.hero-body {
+    display: flex;
+    width: 100%;
+    padding: 1rem 1rem 0;
+}
+
+.new-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.information {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.follow {
+    display: inline-block;
+    margin-top: 5px;
+    color: var(--text-secondary);
+}
+
+.follow-btn {
+    padding: 4px 8px;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: #34224f;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.bottom i {
+    margin-right: 1rem;
+    color: var(--white);
+}
+
+.zm-new-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.zm-new-wrapper .zm-card {
+    padding: 0 5px;
+    width: calc(100% / 4)
+}
+
+.zm-card-content {
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.top a {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+h4 a {
+    color: var(--white);
+    font-weight: 400;
+}
+
+h4 a:hover, .top a:hover {
+    text-decoration: none;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+}
+
+.media:hover a:hover .new {
+    display: unset;
+}
+
+.zm-card-image img {
+    border-radius: 1rem;
+}
+
+.zm-card-image {
+    position: relative;
+}
+
+.new-container {
+    width: 100%;
+    padding: 1rem 1rem 0;
+}
+
+.new-container .zm-section-title {
+    margin-bottom: 1rem;
+}
+
 .song-prefix {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    margin-right: 10px;
     color: var(--text-secondary);
     font-weight: 700;
+    height: 4rem;
+    margin-right: 1.5rem;
 }
 
 .chart-song-item .number {
-    min-width: 4rem;
+    min-width: 6rem;
     font-size: 3.2rem;
     font-weight: 900;
     line-height: 1;
     text-align: center;
     font-family: "Roboto", sans-serif;
+    -webkit-text-stroke: 1.5px var(--text-primary);
+    color: rgba(74, 144, 226, 0);
+    opacity: 7;
+}
+
+.fist .number {
+    -webkit-text-stroke: 1px #4a90e2;
+    opacity: 1;
+}
+
+.second .number {
+    -webkit-text-stroke: 1px #50e3c2;
+    opacity: 1;
+}
+
+.third .number {
+    -webkit-text-stroke: 1px #e35050;
+    opacity: 1;
 }
 
 .list-zm .chart-song-item .media-left,
- .list-zm .chart-song-item .media-right {
+.list-zm .chart-song-item .media-right {
     flex-grow: 1;
 }
 
@@ -551,16 +756,15 @@ h3 a {
     width: 1.8rem;
     height: 3.6rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--white);
 }
 
 .is-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 .is-center .show-all {
@@ -604,12 +808,13 @@ h3 a {
 }
 
 .section-header .title {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: var(--white);
-    margin-top: 0;
 }
-.section-header a:hover, .box-header a:hover {
+
+.section-header a:hover,
+.box-header a:hover {
     text-decoration: none;
 }
 
@@ -624,7 +829,6 @@ h3 a {
     color: var(--white);
 }
 
-
 .week-chart-section .week-chart-box .box-header .zm-btn {
     height: 0;
     color: var(--purple-primary);
@@ -633,22 +837,26 @@ h3 a {
 .week-chart-section .week-chart-box .box-header {
     display: flex;
     flex-direction: row;
-    padding: 0 0 1rem 4rem;
+    padding: 0 0 1rem 4.4rem;
     font-size: 2.4rem;
     font-weight: 700;
     align-items: baseline;
 }
 
+.week-chart-section .is-center .zm-btn {
+    background-color: inherit;
+}
+
 
 @media screen and (max-width: 1290px) {
     .column-list {
-      width: 100%;
+        width: 100%;
     }
 }
 
-@media screen and  (min-width: 1290px) {
+@media screen and (min-width: 1290px) {
     .column-list {
-      width: calc(100% / 3);
+        width: calc(100% / 3);
     }
 }
 
@@ -656,7 +864,9 @@ h3 a {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    margin: 0 -1.4rem;
 }
+
 .column-list {
     padding: 0 1.2rem;
     margin-bottom: 3rem;
@@ -666,8 +876,22 @@ h3 a {
     border-bottom: none;
 }
 
+.week-chart-box .song-prefix .number {
+    min-width: 3.6rem;
+    letter-spacing: normal;
+}
+
+.list-zm .media-right .level {
+    justify-content: end;
+}
+
+.card-info h3 i {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
 .end {
-    height: 5rem;
+    height: 10rem;
     width: 100%;
 }
 
@@ -721,6 +945,7 @@ h3 a {
     line-height: 2rem;
     font-size: 1.4rem;
 }
+
 .player-control-left .media-song .right {
     justify-content: center;
 }
@@ -826,6 +1051,7 @@ h3 a {
 .level-item {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .player-control-right {

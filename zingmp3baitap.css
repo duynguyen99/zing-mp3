@@ -688,6 +688,7 @@ h3 .link {
 .level-item {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .player-control-right {
