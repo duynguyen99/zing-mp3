@@ -111,12 +111,13 @@
     position: relative;
     width: 100%;
     height: 100%;
+    margin-top: 1.6rem;
 }
 
 .login-nav {
     background-color: var(--purple-primary);
     color: var(--white);
-    padding: 2rem 1rem;
+    padding: 1.6rem 1rem;
     margin: 1rem 2rem;
     border-radius: 1rem;
     text-align: center;
@@ -124,7 +125,7 @@
 
 .text {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1.5rem;
 }
 
@@ -437,7 +438,7 @@ img {
     height: auto;
 }
 
-h3 a {
+.is-ghost {
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -604,6 +605,241 @@ h3 a {
     display: none;
 }
 
+.avatar:hover .opacity-two,
+.avatar:hover .action-play-two {
+    visibility: visible;
+}
+
+.zm-card-image:hover .opacity-two,
+.zm-card-image:hover .action-play-two {
+    visibility: visible;
+}
+
+.hover-new:hover .new {
+    display: unset;
+}
+
+.zm-card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    transition: all 1s;
+    transform: scale(1);
+}
+
+.zm-card-image:hover img {
+    transform: scale(1.2);
+}
+
+.opacity-two {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-alpha-50);
+    visibility: hidden;
+}
+
+.zm-container-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.zm-actions-two {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 2rem;
+}
+
+.is-hidden-two {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action-play-two {
+    color: var(--white);
+    height: 0;
+    visibility: hidden;
+    font-size: 2rem;
+}
+
+.li-share {
+    position: relative;
+}
+
+.li-share:hover .share {
+    display: unset;
+}
+
+.share {
+    width: 22rem;
+    background-color: #34224f;
+    position: absolute;
+    bottom: 0;
+    right: 27rem;
+    z-index: 3;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    display: none;
+}
+
+.title-hover {
+    width: 22rem;
+    background-color: #34224f;
+    position: absolute;
+    right: 26rem;
+    z-index: 3;
+    border-radius: 1rem;
+    padding: 2rem 1.4rem;
+    display: none;
+}
+
+.song-other:hover .title-hover {
+   display: unset;
+}
+
+.title-hover .li-item-tt {
+    padding: 4px 0;
+    list-style: none;
+}
+
+.title-hover .title-wrapper {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.title-hover a {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+.title-hover a:hover {
+    text-decoration: none;
+}
+
+.other-item {
+    position: relative;
+}
+
+.other {
+    width: 28rem;
+    background-color: #34224f;
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    z-index: 3;
+    border-radius: 1rem;
+    display: none;
+}
+
+.other-item:active .other {
+    display: unset;
+}
+
+.other-wrapper {
+    padding: 1rem 1rem 0;
+}
+
+.song-other {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.card-other {
+    margin-left: 1rem;
+}
+
+.btn-other {
+    border: 0;
+    color: var(--text-secondary);
+    background-color: #34224f;
+}
+
+.btn-other i {
+    color: var(--text-secondary);
+    font-size: 1.4rem;
+}
+.center-content .btn-other i {
+    color: rgb(255, 255, 255);
+}
+
+.center-button {
+    border-radius: 1rem;
+    margin-top: 1rem;
+    background-color: var(--alpha-bg);
+}
+
+.center-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.center-content .btn-other {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px 0;
+    font-size: 10px;
+    max-width: 8rem;
+    line-height: 1.4rem;
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.center-content .btn-other:hover {
+    background-color: var(--alpha-bg)
+}
+
+.main {
+    margin-top: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: rgb(218, 218, 218);
+}
+
+.li-item {
+    list-style: none;
+    padding: 6px 1rem;
+}
+
+.li-item i {
+    margin-right: 1rem;
+    color: rgb(218, 218, 218);
+    font-size: 1.4rem;
+}
+
+.li-item:hover {
+    background-color: var(--alpha-bg);
+    cursor: pointer;
+}
+
+.end-other {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+   margin: 6px 0 1.2rem;
+    letter-spacing: 0;
+}
+
 .avatar {
     width: 5rem;
     position: relative;
@@ -667,7 +903,7 @@ h3 a {
     font-size: 1.2rem;
     overflow: hidden;
     text-overflow: ellipsis;
-
+    white-space: normal;
 }
 
 .top a {
@@ -680,7 +916,8 @@ h4 a {
     font-weight: 400;
 }
 
-h4 a:hover, .top a:hover {
+h4 a:hover,
+.top a:hover {
     text-decoration: none;
 }
 
@@ -778,7 +1015,7 @@ h4 a:hover, .top a:hover {
 
 .week-chart-section {
     padding-top: 4rem;
-    margin: 0 auto;
+    margin-top: 3rem;
     position: relative;
     width: 100%;
     left: 0;
@@ -919,11 +1156,15 @@ h4 a:hover, .top a:hover {
     padding: 0 2rem;
 }
 
-.player-control-left .media {
+.player-control-left .media-control {
     width: 100%;
     align-items: center;
     display: flex;
     text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    position: relative;
 }
 
 .player-control-left .media-song {
@@ -1077,6 +1318,7 @@ h4 a:hover, .top a:hover {
     justify-content: center;
     color: var(--white);
     margin: 0;
+    border-radius: 50%;
 }
 
 .player-control-right .button:hover,

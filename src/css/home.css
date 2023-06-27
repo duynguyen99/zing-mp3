@@ -362,9 +362,8 @@ main.section > .contents {
 
 .column {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
+    align-items: stretch;
+    margin-top: 1.6rem;
     width: 100%;
 }
 
@@ -423,6 +422,10 @@ main.section > .contents {
     background-color: var(--alpha-bg);
 }
 
+.list-media {
+    border-radius: 1rem;
+}
+
 .media-ellipsis {
     position: absolute;
     color: var(--white);
@@ -434,7 +437,7 @@ main.section > .contents {
 
 .media-song {
     display: flex;
-    padding: 6px 0;
+    padding: 1rem;
     position: relative;
 }
 
@@ -447,6 +450,7 @@ main.section > .contents {
 .media-song .right {
     position: relative;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     line-height: 2rem;
@@ -454,7 +458,7 @@ main.section > .contents {
 
 .list {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1.2em;
 }
 
 .link,
@@ -464,9 +468,17 @@ main.section > .contents {
     color: var(--text-secondary);
 }
 
+.right .title-wrapper {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 img {
     width: 100%;
     border-radius: 1rem;
+    display: block;
 }
 
 .zm-card {
@@ -483,17 +495,22 @@ img {
 
 .zm-card-image {
     position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    transition: all 1s;
+    transform: scale(1);
+}
+
+.zm-card-image:hover img {
+ transform: scale(1.2);
 }
 
 .zm-card-image:hover .opacity, .zm-card-image:hover .zm-tooltip-btn, .zm-card-image:hover .action-play {
     visibility: visible;
 }
-
-/*.image img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-out;
-    overflow: hidden;
-}*/
 
 .zm-actions .zm-tooltip-btn {
     height: 0;

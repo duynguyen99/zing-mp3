@@ -549,11 +549,15 @@ main.section > .contents {
     padding: 0 2rem;
 }
 
-.player-control-left .media {
+.player-control-left .media-control {
     width: 100%;
     align-items: center;
     display: flex;
     text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    position: relative;
 }
 
 .player-control-left .media-song {
@@ -573,10 +577,6 @@ main.section > .contents {
     justify-content: space-between;
     line-height: 2rem;
     font-size: 1.4rem;
-}
-
-h3 .link {
-    font-size: 1.2rem;
 }
 
 .player-control-left img {
@@ -714,6 +714,7 @@ h3 .link {
     justify-content: center;
     color: var(--white);
     margin: 0;
+    border-radius: 2rem;
 }
 
 .player-control-right .button:hover,
