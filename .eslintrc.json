@@ -1,8 +1,9 @@
 {
-    "extends": ["prettier"],
-    "plugins": ["prettier"],
-    "rules": {
-      "prettier/prettier": ["error"],
-      "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
-    }
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
+    "max-lines": 0
   }
+}

@@ -746,8 +746,12 @@ img {
     display: none;
 }
 
-.other-item:active .other {
-    display: unset;
+.other-item:focus .other {
+    display: block;
+}
+
+.other-item:focus-within .other {
+    display: block;
 }
 
 .other-wrapper {
