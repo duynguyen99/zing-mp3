@@ -354,7 +354,7 @@ main.section {
   padding: 0 6rem;
 }
 
-main.section > .contents {
+main.section>.contents {
   margin-top: 12rem;
   height: 100vh;
 }
@@ -449,6 +449,171 @@ main.section > .contents {
   border-radius: 4px;
 }
 
+.radio-schedule .schedule-body {
+  display: flex;
+  border-radius: 8px 8px 0 0;
+}
+
+.schedule-body .left-col .header {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.8rem;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  white-space: nowrap;
+}
+.schedule-body .left-col .body {
+background-color: var(--alpha-bg);
+    border-radius: 8px 0 0 8px;
+    overflow: hidden;
+}
+
+.schedule-body .left-col .zm-card {
+  height: 8rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.schedule-body .left-col .third {
+  margin-bottom: 0;
+}
+
+.schedule-body .left-col .zm-card .content {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.schedule-body .left-col .image {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+figure {
+  background-color: var(--border-player);
+}
+
+.schedule-body .left-col .zm-card .content .action {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: var(--dark-alpha-50);
+  border-radius: 50%;
+  display: none;
+}
+
+.schedule-body .left-col .zm-card .content .action .zm-btn {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+}
+
+.schedule-body .left-col .zm-card .content:hover {
+  cursor: pointer;
+}
+
+.schedule-body .left-col .zm-card .content:hover .action {
+  display: block;
+}
+
+.schedule-body .left-col .zm-card .content:hover .action-play {
+  visibility: visible;
+}
+
+.radio-schedule .schedule-body .content-col {
+  flex: 1 1;
+  position: relative;
+  width: calc(100% - 120px);
+  overflow: hidden;
+}
+
+.radio-schedule .schedule-body .content-col .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-schedule .schedule-body .content-col .programs {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.radio-schedule .schedule-body .content-col .time-line {
+  display: flex;
+  align-items: center;
+  height: 3.8rem;
+}
+
+.radio-schedule .line {
+  position: absolute;
+  z-index: 1;
+  left: 30rem;
+  top: 1rem;
+  bottom: 0;
+  width: 2px;
+  background-color: #66ffc4
+}
+
+.radio-schedule .line .marker {
+  position: absolute;
+  width: 60px;
+  background-color: #66ffc4;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--black);
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  left: -3rem;
+}
+
+.radio-schedule .line:after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: -9px;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #66ffc4;
+}
+
+.radio-schedule .schedule-body .content-col .program-item {
+  position: absolute;
+  height: 8rem;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--alpha-bg);
+  margin-left: 8px;
+  overflow: hidden;
+}
+
+.radio-schedule .schedule-body .content-col .program-item .image {
+  width: 6.4rem;
+  height: 6.4rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.radio-schedule .schedule-body .content-col .program-item .media-content {
+  height: 100%;
+}
+
 .zm-category {
   display: flex;
   width: 100%;
@@ -472,6 +637,163 @@ main.section > .contents {
 .title-wrapper {
   display: flex;
   align-items: center;
+}
+
+.modal {
+  width: 52rem;
+  height: 40rem;
+  background-color: #34224f;
+  position: absolute;
+  /*left: 28rem;*/
+  border-radius: 8px;
+  top: 26rem;
+  display: none;
+}
+
+.description a:hover .modal {
+display: block;
+}
+
+.modal-content {
+  margin: 2rem;
+  padding: 4px;
+}
+
+.modal-content .header {
+  position: relative;
+  margin: -2.4rem -2.4rem 0;
+}
+
+.blur-container {
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.modal-content .blur {
+  background-image: url(https://photo-resize-zmp3.zmdcdn.me/w320_r1x1_webp/images/4/4/d/b/44dbb392a496968421371bb0c608ad3d.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  filter: blur(120px);
+}
+
+.modal-content .media {
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  z-index: 2;
+  padding: 24px 24px 4px;
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #34224f);
+}
+
+
+.modal-content .media-left .image {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-content .header .media-left {
+  flex-grow: 0;
+}
+
+.modal-content .media-content .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  white-space: normal;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.modal-content .media-content .subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.modal-content .media-content .actions {
+  margin-top: 1.2rem;
+  display: flex
+}
+
+.modal-content .media-content .actions .zm-btn {
+  margin-right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.actions .is-outlined {
+  background-color: var(--purple-primary);
+  color: var(--white);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 400;
+  border: 0;
+  border-radius: 2rem;
+  width: 12rem;
+  height: 3.2rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.actions .is-outlined:hover {
+  background-color: #9b4de0cd;
+  cursor: pointer;
+}
+
+
+.release-date {
+  display: flex;
+  margin-top: 1.2rem;
+}
+
+.modal-content .description-zm {
+  margin-top: 1.2rem;
+}
+
+.description-zm .title {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.description-zm .content {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+.btn-all {
+  margin-top: 2.4rem;
+  text-align: center;
+}
+
+.btn-all .is-outlined {
+    font-weight: 500;
+    background-color: var(--alpha-bg);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    padding: 8px 1.6rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.btn-all .is-outlined:hover {
+cursor: pointer;  
+background-color: var(--sidebar-bg);
 }
 
 .media {
@@ -574,7 +896,7 @@ main.section > .contents {
 .media-right {
   position: absolute;
   display: inline-flex;
-  left: 78%;
+  left: 80%;
   bottom: 0;
   visibility: hidden;
 }
@@ -606,6 +928,7 @@ main.section > .contents {
 .description {
   font-size: 1.3rem;
   margin-top: 1.2rem;
+  position: relative;
 }
 
 .description a {
@@ -627,6 +950,7 @@ main.section > .contents {
   margin: 0 -1rem;
   width: 100%;
 }
+
 .column-list {
   padding: 0 1rem;
   width: 100%;
@@ -648,19 +972,6 @@ main.section > .contents {
 .program-item {
   padding: 0 1rem;
   width: 100%;
-}
-
-/*@media screen and (min-width: 1024px) and (max-width: 1224px) {
-   {
-    width: 50%;
-  }
-}*/
-
-@media screen and (max-with: 1024px) {
-  .program-item {
-    background-color: red;
-    width: 100%;
-  }
 }
 
 .program-item a:hover {
@@ -733,6 +1044,7 @@ main.section > .contents {
   position: relative;
   color: var(--white);
 }
+
 .pr-podcast-item .media-content .host {
   font-size: 1.2rem;
   font-weight: 500;
@@ -914,6 +1226,7 @@ main.section > .contents {
   color: var(--text-secondary);
   font-size: 1.4rem;
 }
+
 .center-content .btn-other i {
   color: rgb(255, 255, 255);
 }
