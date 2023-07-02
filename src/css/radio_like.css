@@ -501,10 +501,6 @@ background-color: var(--alpha-bg);
   overflow: hidden;
 }
 
-figure {
-  background-color: var(--border-player);
-}
-
 .schedule-body .left-col .zm-card .content .action {
   position: absolute;
   height: 100%;
@@ -561,7 +557,6 @@ figure {
 
 .radio-schedule .line {
   position: absolute;
-  z-index: 1;
   left: 30rem;
   top: 1rem;
   bottom: 0;
@@ -571,7 +566,7 @@ figure {
 
 .radio-schedule .line .marker {
   position: absolute;
-  width: 60px;
+  width: 6rem;
   background-color: #66ffc4;
   font-size: 1.4rem;
   font-weight: 700;
@@ -612,6 +607,12 @@ figure {
 
 .radio-schedule .schedule-body .content-col .program-item .media-content {
   height: 100%;
+}
+
+.content-col .program-item .media-content .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .zm-category {

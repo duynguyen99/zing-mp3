@@ -343,7 +343,7 @@ main.section>.contents {
 }
 
 .section-header {
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
     position: relative;
 }
 
@@ -353,10 +353,6 @@ main.section>.contents {
 }
 
 .chart-title .title {
-    background: linear-gradient(to right, #ff9357 1.54%, #9100ff 98.71%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 4rem;
 }
@@ -370,14 +366,6 @@ main.section>.contents {
 .list,
 .chart-song-item {
     border-bottom: 1px solid var(--sidebar-bg);
-}
-
-.ratings {
-    padding-bottom: 3rem;
-}
-
-.chart-song-item-end {
-    margin-top: 2rem;
 }
 
 .media {
@@ -516,10 +504,6 @@ img {
     background-color: var(--alpha-bg);
 }
 
-.chart-song-item-end button:hover,
-.week-chart-section .is-center .zm-btn:hover {
-    background-color: var(--alpha-bg);
-}
 
 .media:hover .items {
     display: unset;
@@ -1000,135 +984,6 @@ h4 a:hover,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.is-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.is-center .show-all {
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 1rem 2.5rem;
-    border: 1px solid var(--white);
-    border-radius: 2rem;
-    color: var(--white);
-}
-
-.week-chart-section {
-    padding-top: 4rem;
-    margin-top: 3rem;
-    position: relative;
-    width: 100%;
-    left: 0;
-    height: auto;
-}
-
-.week-chart-section .bg-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    background: url(https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.43/static/media/week-chart-bg.edf332e5.jpg) top/cover no-repeat;
-    filter: grayscale(1);
-    margin: 0 -6rem;
-}
-
-.week-chart-section .bg-alpha {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: var(--chart-bg-img-alpha);
-    margin: 0 -6rem;
-}
-
-.section-header .title {
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--white);
-}
-
-.section-header a:hover,
-.box-header a:hover {
-    text-decoration: none;
-}
-
-.week-chart-section .week-chart-box {
-    border-radius: 1.6rem;
-    background-color: var(--sidebar-bg);
-    padding: 1rem 1rem;
-    position: relative;
-}
-
-.box-header a {
-    color: var(--white);
-}
-
-.week-chart-section .week-chart-box .box-header .zm-btn {
-    height: 0;
-    color: var(--purple-primary);
-}
-
-.week-chart-section .week-chart-box .box-header {
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 1rem 4.4rem;
-    font-size: 2.4rem;
-    font-weight: 700;
-    align-items: baseline;
-}
-
-.week-chart-section .is-center .zm-btn {
-    background-color: inherit;
-}
-
-
-@media screen and (max-width: 1290px) {
-    .column-list {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1290px) {
-    .column-list {
-        width: calc(100% / 3);
-    }
-}
-
-.columns {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin: 0 -1.4rem;
-}
-
-.column-list {
-    padding: 0 1.2rem;
-    margin-bottom: 3rem;
-}
-
-.list-zm .chart-song-item {
-    border-bottom: none;
-}
-
-.week-chart-box .song-prefix .number {
-    min-width: 3.6rem;
-    letter-spacing: normal;
-}
-
-.list-zm .media-right .level {
-    justify-content: end;
-}
-
-.card-info h3 i {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
 }
 
 .end {
